@@ -1,0 +1,31 @@
+version: '3.9'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app
+    ports:
+      - '8000:8000'
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=sqlite:///./employee.db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - '5173:5173'
+    environment:
+      - VITE_API_URL=http://localhost:8000
+
+  db:
+    image: nouchka/sqlite3
+    volumes:
+      - ./backend/employee.db:/data/db
+    command: sqlite3 /data/db
