@@ -1,6 +1,6 @@
-# Employee Management (FastAPI + React)
+# Employee Management (FastAPI + React) 
 
-Full CRUD employee management scaffold using FastAPI + SQLModel backend and React + Vite frontend.
+Full CRUD employee management scaffold using FastAPI + SQLModel backend and React + Vite frontend.(with sqlite)
 
 ## Project structure
 
