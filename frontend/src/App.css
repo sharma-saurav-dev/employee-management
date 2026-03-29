@@ -1,0 +1,65 @@
+.app {
+  max-width: 980px;
+  margin: 2rem auto;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.employee-form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.employee-form input {
+  padding: 0.6rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.employee-form .buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.employee-form button {
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background: #2f74e4;
+  color: white;
+  cursor: pointer;
+}
+
+.employees-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employees-table th,
+.employees-table td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.employees-table th {
+  background: #f7f7f7;
+}
+
+.employees-table button {
+  margin-right: 0.4rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
