@@ -37,6 +37,25 @@ npm run dev
 
 - App: http://localhost:5173
 
+## Docker setup
+
+1. Build and run all containers:
+
+```bash
+docker compose up --build
+```
+
+2. Stop:
+
+```bash
+docker compose down
+```
+
+3. Access services:
+- Backend: http://localhost:8000
+- Swagger: http://localhost:8000/docs
+- Frontend: http://localhost:5173
+
 ## API endpoints
 
 - GET `/employees`
